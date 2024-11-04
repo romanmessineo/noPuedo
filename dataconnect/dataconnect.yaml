@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "Fixture"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "Fixture-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

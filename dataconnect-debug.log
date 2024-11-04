@@ -1,0 +1,14 @@
+I1104 02:14:58.149695   19564 load.go:37] Reloading schema and connectors...
+I1104 02:14:58.159949   19564 control.go:45] [engine.Service /emulator/Fixture e628] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1104 02:14:58.166072   19564 control.go:73] [engine.Service /emulator/Fixture e628] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1104 02:14:58.180678   19564 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect-generated\\js\\default-connector"
+I1104 02:14:58.182715   19564 collector.go:107] schema extensions wrote into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1104 02:14:58.184300   19564 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [221B] package.json [623B] index.d.ts [264B] esm\index.esm.js [180B] esm\package.json [17B] 
+I1104 02:14:58.189478   19564 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+I1104 02:15:00.251559   19564 load.go:115] Finished reloading
+I1104 02:15:00.252074   19564 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1104 02:15:00.252591   19564 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1104 02:15:01.354111   19564 control.go:45] [engine.Service /emulator/Fixture 0351] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1104 02:15:01.354111   19564 control.go:73] [engine.Service /emulator/Fixture 0351] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 

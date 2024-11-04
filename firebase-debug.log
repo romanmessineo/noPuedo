@@ -1,0 +1,176 @@
+[debug] [2024-11-04T05:14:57.939Z] ----------------------------------------------------------------------
+[debug] [2024-11-04T05:14:57.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Roma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-11-04T05:14:57.942Z] CLI Version:   13.23.1
+[debug] [2024-11-04T05:14:57.942Z] Platform:      win32
+[debug] [2024-11-04T05:14:57.942Z] Node Version:  v20.9.0
+[debug] [2024-11-04T05:14:57.942Z] Time:          Mon Nov 04 2024 02:14:57 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-11-04T05:14:57.942Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-04T05:14:58.045Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-04T05:14:58.045Z] > authorizing via signed-in user (messineoroman@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-11-04T05:14:58.055Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-04T05:14:58.055Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-04T05:14:58.055Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-04T05:14:58.059Z] [hub] writing locator at C:\Users\Roma\AppData\Local\Temp\hub-torneonopuedo.json
+[debug] [2024-11-04T05:14:58.113Z] I1104 02:14:58.102755   17968 control.go:45] [engine.Service /emulator/Fixture fb90] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1104 02:14:58.110889   17968 control.go:73] [engine.Service /emulator/Fixture fb90] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:14:58.102755   17968 control.go:45] [engine.Service /emulator/Fixture fb90] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1104 02:14:58.110889   17968 control.go:73] [engine.Service /emulator/Fixture fb90] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-04T05:14:58.127Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-04T05:14:58.127Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-11-04T05:14:58.127Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\Roma\\.cache\\firebase\\emulators\\dataconnect-emulator-1.6.0.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\Roma\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-1.6.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\Roma\\\\Desktop\\\\Fixture\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-11-04T05:14:58.151Z] I1104 02:14:58.149695   19564 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:14:58.149695   19564 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-11-04T05:14:58.186Z] I1104 02:14:58.159949   19564 control.go:45] [engine.Service /emulator/Fixture e628] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1104 02:14:58.166072   19564 control.go:73] [engine.Service /emulator/Fixture e628] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+I1104 02:14:58.180678   19564 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect-generated\\js\\default-connector"
+I1104 02:14:58.182715   19564 collector.go:107] schema extensions wrote into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [61293B] 
+I1104 02:14:58.184300   19564 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Roma\\Desktop\\Fixture\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [221B] package.json [623B] index.d.ts [264B] esm\index.esm.js [180B] esm\package.json [17B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:14:58.159949   19564 control.go:45] [engine.Service /emulator/Fixture e628] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1104 02:14:58.166072   19564 control.go:73] [engine.Service /emulator/Fixture e628] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \nI1104 02:14:58.180678   19564 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"C:\\\\Users\\\\Roma\\\\Desktop\\\\Fixture\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI1104 02:14:58.182715   19564 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\Roma\\\\Desktop\\\\Fixture\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [61293B] \nI1104 02:14:58.184300   19564 collector.go:107] connector \"default\" javascriptSdk wrote into \"C:\\\\Users\\\\Roma\\\\Desktop\\\\Fixture\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: index.cjs.js [221B] package.json [623B] index.d.ts [264B] esm\\index.esm.js [180B] esm\\package.json [17B] \n"}}
+[debug] [2024-11-04T05:14:58.198Z] I1104 02:14:58.189478   19564 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:14:58.189478   19564 installsdk.go:76] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2024-11-04T05:14:59.287Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-04T05:14:59.288Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-04T05:14:59.289Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"Fixture","maxOpenConnections":1}
+[debug] [2024-11-04T05:14:59.291Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"Fixture\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-11-04T05:14:59.292Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-11-04T05:15:00.250Z] I1104 02:15:00.251559   19564 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:15:00.251559   19564 load.go:115] Finished reloading\n"}}
+[debug] [2024-11-04T05:15:00.251Z] I1104 02:15:00.252074   19564 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:15:00.252074   19564 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2024-11-04T05:15:00.251Z] I1104 02:15:00.252591   19564 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:15:00.252591   19564 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-11-04T05:15:01.305Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-11-04T05:15:01.305Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-11-04T05:15:01.305Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"Fixture","maxOpenConnections":1}
+[debug] [2024-11-04T05:15:01.311Z] Frontend message 
+[debug] [2024-11-04T05:15:01.312Z] Backend message AuthenticationResponse
+[debug] [2024-11-04T05:15:01.313Z] Backend message ParameterStatus
+[debug] [2024-11-04T05:15:01.313Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.314Z] Frontend message Query
+[debug] [2024-11-04T05:15:01.315Z] Backend message EmptyQuery
+[debug] [2024-11-04T05:15:01.315Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.322Z] Frontend message Query
+[debug] [2024-11-04T05:15:01.325Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.326Z] Backend message DataRow
+[debug] [2024-11-04T05:15:01.326Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.326Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.327Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.327Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.327Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.328Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.328Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.328Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.328Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.328Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.329Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.329Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.330Z] Backend message DataRow
+[debug] [2024-11-04T05:15:01.330Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.330Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.330Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.331Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.331Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.331Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.331Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.331Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.331Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.332Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.332Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.333Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.333Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.333Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.333Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.333Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.333Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.334Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.334Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.334Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.334Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.335Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.335Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.335Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.340Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.340Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.341Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.341Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.341Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.342Z] Frontend message Query
+[debug] [2024-11-04T05:15:01.342Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.342Z] Backend message DataRow
+[debug] [2024-11-04T05:15:01.342Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.342Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.342Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.343Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.343Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.343Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.343Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.343Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.343Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.343Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.344Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.344Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.344Z] Backend message DataRow
+[debug] [2024-11-04T05:15:01.344Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.344Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.345Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.345Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.345Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.345Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.346Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.346Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.346Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.346Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.346Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.347Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.347Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.347Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.347Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.347Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.347Z] Frontend message Parse
+[debug] [2024-11-04T05:15:01.348Z] Backend message ParseComplete
+[debug] [2024-11-04T05:15:01.348Z] Frontend message Describe
+[debug] [2024-11-04T05:15:01.348Z] Backend message ParameterDescriptionMessage
+[debug] [2024-11-04T05:15:01.348Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.348Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.348Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.348Z] Frontend message Bind
+[debug] [2024-11-04T05:15:01.351Z] Backend message BindComplete
+[debug] [2024-11-04T05:15:01.352Z] Frontend message Execute
+[debug] [2024-11-04T05:15:01.352Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.352Z] Frontend message Sync
+[debug] [2024-11-04T05:15:01.352Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.352Z] Frontend message Query
+[debug] [2024-11-04T05:15:01.353Z] Backend message RowDescriptionMessage
+[debug] [2024-11-04T05:15:01.353Z] Backend message DataRow
+[debug] [2024-11-04T05:15:01.353Z] Backend message CommandComplete
+[debug] [2024-11-04T05:15:01.353Z] Backend message ReadyForQuery
+[debug] [2024-11-04T05:15:01.354Z] I1104 02:15:01.354111   19564 control.go:45] [engine.Service /emulator/Fixture 0351] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1104 02:15:01.354111   19564 control.go:73] [engine.Service /emulator/Fixture 0351] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1104 02:15:01.354111   19564 control.go:45] [engine.Service /emulator/Fixture 0351] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1104 02:15:01.354111   19564 control.go:73] [engine.Service /emulator/Fixture 0351] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-11-04T05:15:01.355Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-11-04T05:15:01.355Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-11-04T05:15:01.355Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2024-11-04T05:15:01.360Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-11-04T05:15:01.362Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-11-04T05:15:01.362Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"Fixture","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[debug] [2024-11-04T05:15:01.365Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┐
+│ Emulator     │ Host:Port      │
+├──────────────┼────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │
+└──────────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
